@@ -1,0 +1,48 @@
+Queries
+
+task 1 
+
+59 ?- consult(['c:/Users/aljaz/Downloads/shapes.pl']).
+true.
+
+60 ?- square_area(5, A).
+A = 25.
+
+61 ?- square_perimeter(5, P).
+P = 20.
+
+62 ?- rectangle_area(4, 6, A).
+A = 24.
+
+63 ?- rectangle_perimeter(4, 6, P).
+P = 20.
+
+64 ?- triangle_area(6, 4, A).
+A = 12.0.
+
+65 ?- triangle_perimeter(3, 4, 5, P).
+P = 12.
+
+task 2
+
+76 ?- consult(['c:/Users/aljaz/Downloads/login.pl']).
+true.
+
+77 ?- login.
+Enter username: aljazi.
+Enter password: |: 1234.
+Login Successful
+true.
+
+78 ?- login.
+Enter username: ali.
+Enter password: |: 1111.
+Login Unsuccessful
+Enter username: |: ali.
+Enter password: |: 2222.
+Login Unsuccessful
+Enter username: |: ali.
+Enter password: |: 3333.
+Login Unsuccessful
+Sorry, you exceeded the maximum number of attempts, try again later.
+true.
